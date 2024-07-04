@@ -1,0 +1,78 @@
+//sorting in ascending order
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[50],size,num,pos,i,j,temp;
+	cout<<"enter the size";
+	cin>>size;
+	if(size>50)
+	{
+		cout<<"overflow";
+	}
+	else
+	{
+		cout<<"enter the elemenets of array:";
+		for(i=0;i<size;i++)
+		{
+			cin>>a[i];
+		}
+		for(i=0;i<size;i++)
+		{
+			for(j=i+1;j<size;j++)
+			{
+				if(a[i]>a[j])
+				{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+				}
+			}
+		}
+		cout<<"enter the elemenets of array:";
+		for(i=0;i<size;i++)
+		{
+		cout<<a[i];
+		}
+	}
+}
+
+//sorting in descending
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[50],size,num,pos,i,j,temp;
+	cout<<"enter the size";
+	cin>>size;
+	if(size>50)
+	{
+		cout<<"overflow";
+	}
+	else
+	{
+		cout<<"enter the elemenets of array:";
+		for(i=0;i<size;i++)
+		{
+			cin>>a[i];
+		}
+		for(i=0;i<size;i++)
+		{
+			for(j=i+1;j<size;j++)
+			{
+				if(a[i]<a[j])
+				{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+				}
+			}
+		}
+		cout<<"enter the elemenets of array:";
+		for(i=0;i<size;i++)
+		{
+		cout<<a[i];
+		}
+	}
+}
+	
